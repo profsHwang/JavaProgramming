@@ -14,10 +14,15 @@ public class MyFrame extends JFrame
         this.setBackground(Color.lightGray);
         this.setTitle("프로그래밍 연습2");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setVisible(true);
+        
         this.setDefaultLookAndFeelDecorated(true);
         
+        JButton btnOk = new JButton("OK");
+        JButton btnCancel = new JButton("Cancel");
         
+        cp.add(btnOk, BorderLayout.NORTH);
+        cp.add(btnCancel, BorderLayout.SOUTH);
         
+        this.setVisible(true);
     }
 }
